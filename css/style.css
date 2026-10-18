@@ -1,0 +1,68 @@
+.hero-section {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(90deg,
+            rgba(0, 0, 0, 0.95) 0%,
+            rgba(0, 0, 0, 0.85) 35%,
+            rgba(0, 0, 0, 0) 100%),
+        url("../images/background.jpg") center right / cover no-repeat;
+}
+
+.tracking-widest {
+    letter-spacing: 0.2em;
+}
+
+.hero-title {
+    color: #b3e600;
+    font-size: 6rem;
+    line-height: 0.9 !important;
+    letter-spacing: -0.04em;
+}
+
+.text-lime {
+    color: #b3e600;
+}
+
+.btn-lime {
+    background-color: #b3e600;
+    color: #000;
+    border: 2px solid #b3e600;
+    transition: all 0.3s ease;
+}
+
+.btn-lime:hover {
+    background-color: #96c001;
+    border-color: #272921;
+    color: #000;
+}
+
+.btn-lime i {
+    transition: transform 0.3s ease;
+}
+
+.btn-lime:hover i {
+    transform: translate(3px, -3px);
+}
+
+.hover-lime-text {
+    border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.hover-lime-text:hover {
+    color: #b3e600 !important;
+    border-color: #b3e600 !important;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.9) 100%),
+            url("../images/hero bg4.jpg") center / cover no-repeat;
+        min-height: 80vh;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
