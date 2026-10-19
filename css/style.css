@@ -66,3 +66,89 @@
         font-size: 3.5rem;
     }
 }
+
+
+/* footer */
+
+:root {
+  font-family: "Manrope", sans-serif;
+  color: #161816;
+  background: #f3f4ef;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #f3f4ef; }
+a { color: inherit; font: inherit; text-decoration: none; }
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+}
+.brand-mark {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background:
+    linear-gradient(90deg, transparent 42%, currentColor 42% 58%, transparent 58%),
+    linear-gradient(0deg, transparent 42%, currentColor 42% 58%, transparent 58%);
+  transform: rotate(45deg);
+}
+
+footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 72px 42px 24px;
+  color: #f2f3ee;
+  background: #141614;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding-bottom: 72px;
+}
+.brand-light { margin-bottom: 18px; color: #f4f5f1; }
+.brand-light .brand-mark { color: #c8f43d; }
+.footer-top > div:first-child p { margin: 0; color: #7e837d; font-size: 12px; }
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.footer-links > div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 13px;
+}
+.footer-links span {
+  margin-bottom: 7px;
+  color: #686d68;
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.footer-links a { color: #c5c9c4; font-size: 11px; }
+.footer-links a:hover { color: #c8f43d; }
+
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  padding-top: 22px;
+  border-top: 1px solid #303330;
+  color: #6e736e;
+  font-family: "DM Mono", monospace;
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.footer-bottom div { display: flex; gap: 24px; }
+.footer-bottom > span:last-child { text-align: right; }
+
